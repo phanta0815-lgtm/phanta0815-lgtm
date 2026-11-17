@@ -1,0 +1,50 @@
+<svg width="750" height="530" viewBox="0 0 750 530" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #2c001e; }
+    .header { fill: #333333; }
+    .title { fill: #cccccc; font-family: 'Ubuntu', 'Consolas', monospace; font-size: 13px; font-weight: bold; }
+    .prompt { fill: #8ae234; font-family: 'Ubuntu Mono', 'Consolas', monospace; font-size: 14px; font-weight: bold; }
+    .path { fill: #729fcf; font-family: 'Ubuntu Mono', 'Consolas', monospace; font-size: 14px; font-weight: bold; }
+    .cmd { fill: #ffffff; font-family: 'Ubuntu Mono', 'Consolas', monospace; font-size: 14px; }
+    .out { fill: #eeeeec; font-family: 'Ubuntu Mono', 'Consolas', monospace; font-size: 14px; }
+    .bold { font-weight: bold; fill: #ffffff; }
+  </style>
+
+  <!-- Khung cửa sổ Terminal -->
+  <rect width="750" height="530" rx="8" class="bg" stroke="#444444" stroke-width="1.5" />
+  
+  <!-- Thanh tiêu đề -->
+  <path d="M 8 0 L 742 0 Q 750 0 750 8 L 750 32 L 0 32 L 0 8 Q 0 0 8 0 Z" class="header" />
+  <circle cx="20" cy="16" r="6" fill="#ff5f56" />
+  <circle cx="40" cy="16" r="6" fill="#ffbd2e" />
+  <circle cx="60" cy="16" r="6" fill="#27c93f" />
+  <text x="375" y="21" text-anchor="middle" class="title">vphan@ubuntu: ~</text>
+
+  <!-- Lệnh 1: whoami -->
+  <text x="20" y="65" class="prompt">vphan@ubuntu<tspan class="cmd">:</tspan><tspan class="path">~</tspan><tspan class="cmd">$ whoami</tspan></text>
+  <text x="20" y="88" class="bold" font-family="monospace" font-size="14">Ta Van Phan</text>
+  <text x="20" y="110" class="out">Embedded Systems · IoT · Robotics · Vietnam</text>
+
+  <!-- Lệnh 2: about-me.txt -->
+  <text x="20" y="145" class="prompt">vphan@ubuntu<tspan class="cmd">:</tspan><tspan class="path">~</tspan><tspan class="cmd">$ cat about-me.txt</tspan></text>
+  <text x="20" y="168" class="out">• Control Engineering & Automation Student at PTIT</text>
+  <text x="20" y="190" class="out">• Passionate about Embedded Firmware, Robotics & Edge AI</text>
+  <text x="20" y="212" class="out">• Building real-time hardware/software solutions</text>
+
+  <!-- Lệnh 3: technical-skills.txt -->
+  <text x="20" y="247" class="prompt">vphan@ubuntu<tspan class="cmd">:</tspan><tspan class="path">~</tspan><tspan class="cmd">$ cat technical-skills.txt</tspan></text>
+  <text x="20" y="270" class="out">Languages     C, C++, Python</text>
+  <text x="20" y="292" class="out">Platforms     STM32, ESP32, Arduino, Seeed XIAO</text>
+  <text x="20" y="314" class="out">Robotics/AI   ROS 2, Edge Impulse (TinyML), Computer Vision</text>
+  <text x="20" y="336" class="out">Interfaces    GPIO, UART, PWM, TIMER, SPI, I2C, WiFi, MQTT, ESP-NOW</text>
+
+  <!-- Lệnh 4: ls ~/projects -->
+  <text x="20" y="371" class="prompt">vphan@ubuntu<tspan class="cmd">:</tspan><tspan class="path">~</tspan><tspan class="cmd">$ ls ~/projects</tspan></text>
+  <text x="20" y="394" class="bold" font-family="monospace" font-size="14">self-balancing-line-follower/</text>
+  <text x="20" y="416" class="bold" font-family="monospace" font-size="14">stem-mini-drone-espnow/</text>
+  <text x="20" y="438" class="bold" font-family="monospace" font-size="14">tinyml-edge-anomaly-detection/</text>
+  <text x="20" y="460" class="bold" font-family="monospace" font-size="14">wearable-fall-detection-iot/</text>
+
+  <!-- Dấu nháy cuối -->
+  <text x="20" y="498" class="prompt">vphan@ubuntu<tspan class="cmd">:</tspan><tspan class="path">~</tspan><tspan class="cmd">$ ▋</tspan></text>
+</svg>
